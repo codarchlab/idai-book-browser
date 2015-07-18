@@ -1,0 +1,41 @@
+
+  {
+    "id": "Overview",
+    "title": {
+      "de": "Inhalte"
+    }
+    ,"children": [
+    {
+      "id": "navbar",
+      "children":[
+	 
+      {
+        "id": "about",
+        "title": {
+          "de": "Über idai.bookbrowser"
+        }
+      }
+	  
+	  
+	  
+      ]
+    },
+    {
+      "id": "footer",
+      "children": [
+      {
+        "id": "imprint",
+        "title": {
+		  "de": "Impressum",
+          "en": "Imprint"
+        }
+      },
+      {
+        "id": "privacy",
+        "title": {
+          "de": "Datenschutz"
+        }
+      }]
+    }
+  ]
+}

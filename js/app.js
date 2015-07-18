@@ -1,4 +1,10 @@
-var routerApp = angular.module('idaiBookBrowser', ['ui.router']);
+var routerApp = angular.module('idaiBookBrowser', [
+	'ui.router',
+	'templates-main',
+	'idai.services',
+	'idai.filters',
+	'idai.directives',
+]);
 
 routerApp.config(function($stateProvider, $urlRouterProvider) {
     

@@ -3,18 +3,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-        
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
 </head>
 
 <body ng-app="idaiBookBrowser">
 
 <div class="container">
+	
+	<idai-navbar 
+		login-function=""
+		logout-function=""
+		user-object="user">
+	</idai-navbar>
+	
     <div ui-view></div>
 	</div>
+	
+	<idai-footer></idai-footer>
 	
 	
 	<script src="bower_components/angular/angular.js"></script>
 	<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+	<script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+	<script src="js/idai-components-0.1.0.min.js"></script>
 	<script src="js/app.js"></script>
 </body>
 </html>
