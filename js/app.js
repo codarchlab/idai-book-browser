@@ -1,9 +1,11 @@
 var routerApp = angular.module('idaiBookBrowser', [
+	'ui.bootstrap',
 	'ui.router',
 	'templates-main',
 	'idai.services',
 	'idai.filters',
 	'idai.directives',
+	'idaiBookBrowser.controllers'
 ]);
 
 routerApp.config(function($stateProvider, $urlRouterProvider) {
