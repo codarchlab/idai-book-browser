@@ -1,7 +1,7 @@
 var routerApp = angular.module('idaiBookBrowser', [
 	'ui.bootstrap',
 	'ui.router',
-	'idai.components',
+	'idai.templates',
 	'idai.services',
 	'idai.filters',
 	'idai.directives',
