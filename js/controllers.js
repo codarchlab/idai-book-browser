@@ -12,8 +12,17 @@ angular.module('idaiBookBrowser.controllers',[])
 
 		$scope.loadMore = function() {
 
+			var newItemCountMax = 5;
+
 			var last = $scope.pageMinis.length;
-			for(var i = 0; i < 5; i++) {
+
+			var diff = $scope.book.pages.length-$scope.pageMinis.length;
+
+			var newItemCount = newItemCountMax;
+			if (diff<newItemCountMax) newItemCount=diff;
+
+
+			for(var i = 0; i < newItemCount; i++) {
 				$scope.pageMinis.push($scope.book.pages[last + i]);
 			}
 		};
@@ -24,14 +33,7 @@ angular.module('idaiBookBrowser.controllers',[])
 
 			$scope.book=data;
 
-			$scope.pageMinis[0] = $scope.book.pages[0];
-			$scope.pageMinis[1] = $scope.book.pages[1];
-			$scope.pageMinis[2] = $scope.book.pages[2];
-			$scope.pageMinis[3] = $scope.book.pages[3];
-			$scope.pageMinis[4] = $scope.book.pages[4];
-			$scope.pageMinis[5] = $scope.book.pages[5];
-
-
+			$scope.loadMore()
 
 			$scope.leftHandSidePage=$scope.book.pages[$scope.currentPage];
 			$scope.rightHandSidePage=$scope.book.pages[$scope.currentPage+1];

@@ -5,10 +5,10 @@
 
 
 
-    <div class="col-md-4" style="height:550px; overflow-y:auto;">
+    <div class="col-md-2" style="height:550px; overflow-y:auto;">
 
         <div infinite-scroll='loadMore()' infinite-scroll-distance='2'>
-            <img ng-repeat='pageMini in pageMinis' width="250px" height="250px" alt="{{pageMini.page_nr_hr}}">
+            <img ng-repeat='pageMini in pageMinis' width="200px" height="200px" src="{{pageMini.img_file}}" alt="{{pageMini.page_nr_hr}}">
         </div>
 
     </div>
