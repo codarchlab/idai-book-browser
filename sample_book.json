@@ -1,0 +1,196 @@
+{
+  "title" : "The title",
+
+  "toc" : {
+
+    "entry" : {
+      "label" : "label",
+      "index" : "refers to the array index / technical page id"
+
+    }
+  },
+
+  "pages" : [
+
+    {
+      "page_nr_hr" : "I",
+      "img_file" : "BOOK-antiquitiesofionia01-0001_196.jpg"
+    },
+    {
+      "page_nr_hr" : "II",
+      "img_file" : "BOOK-antiquitiesofionia01-0002_197.jpg"
+    },
+    {
+      "page_nr_hr" : "3",
+      "img_file" : "BOOK-antiquitiesofionia01-0001_196.jpg"
+    },
+    {
+      "page_nr_hr" : "4",
+      "img_file" : "BOOK-antiquitiesofionia01-0002_197.jpg"
+    },
+    {
+      "page_nr_hr" : "5",
+      "img_file" : "BOOK-antiquitiesofionia01-0001_196.jpg"
+    },
+    {
+      "page_nr_hr" : "6",
+      "img_file" : "BOOK-antiquitiesofionia01-0002_197.jpg"
+    },
+    {
+      "page_nr_hr" : "7",
+      "img_file" : "BOOK-antiquitiesofionia01-0001_196.jpg"
+    },
+    {
+      "page_nr_hr" : "8",
+      "img_file" : "BOOK-antiquitiesofionia01-0002_197.jpg"
+    },
+    {
+      "page_nr_hr" : "9",
+      "img_file" : "BOOK-antiquitiesofionia01-0001_196.jpg"
+    },
+    {
+      "page_nr_hr" : "10",
+      "img_file" : "BOOK-antiquitiesofionia01-0002_197.jpg"
+    },
+    {
+      "page_nr_hr" : "11",
+      "img_file" : "BOOK-antiquitiesofionia01-0001_196.jpg"
+    },
+    {
+      "page_nr_hr" : "12",
+      "img_file" : "BOOK-antiquitiesofionia01-0002_197.jpg"
+    },
+    {
+      "page_nr_hr" : "13",
+      "img_file" : "BOOK-antiquitiesofionia01-0001_196.jpg"
+    },
+    {
+      "page_nr_hr" : "14",
+      "img_file" : "BOOK-antiquitiesofionia01-0002_197.jpg"
+    },
+    {
+      "page_nr_hr" : "15",
+      "img_file" : "BOOK-antiquitiesofionia01-0001_196.jpg"
+    },
+    {
+      "page_nr_hr" : "16",
+      "img_file" : "BOOK-antiquitiesofionia01-0002_197.jpg"
+    },
+    {
+      "page_nr_hr" : "17",
+      "img_file" : "BOOK-antiquitiesofionia01-0001_196.jpg"
+    },
+    {
+      "page_nr_hr" : "18",
+      "img_file" : "BOOK-antiquitiesofionia01-0002_197.jpg"
+    },
+    {
+      "page_nr_hr" : "19",
+      "img_file" : "BOOK-antiquitiesofionia01-0001_196.jpg"
+    },
+    {
+      "page_nr_hr" : "20",
+      "img_file" : "BOOK-antiquitiesofionia01-0002_197.jpg"
+    },
+    {
+      "page_nr_hr" : "21",
+      "img_file" : "BOOK-antiquitiesofionia01-0001_196.jpg"
+    },
+    {
+      "page_nr_hr" : "22",
+      "img_file" : "BOOK-antiquitiesofionia01-0002_197.jpg"
+    },
+    {
+      "page_nr_hr" : "23",
+      "img_file" : "BOOK-antiquitiesofionia01-0001_196.jpg"
+    },
+    {
+      "page_nr_hr" : "24",
+      "img_file" : "BOOK-antiquitiesofionia01-0002_197.jpg"
+    },
+    {
+      "page_nr_hr" : "25",
+      "img_file" : "BOOK-antiquitiesofionia01-0001_196.jpg"
+    },
+    {
+      "page_nr_hr" : "26",
+      "img_file" : "BOOK-antiquitiesofionia01-0002_197.jpg"
+    },
+    {
+      "page_nr_hr" : "27",
+      "img_file" : "BOOK-antiquitiesofionia01-0001_196.jpg"
+    },
+    {
+      "page_nr_hr" : "28",
+      "img_file" : "BOOK-antiquitiesofionia01-0002_197.jpg"
+    },
+    {
+      "page_nr_hr" : "29",
+      "img_file" : "BOOK-antiquitiesofionia01-0001_196.jpg"
+    },
+    {
+      "page_nr_hr" : "30",
+      "img_file" : "BOOK-antiquitiesofionia01-0002_197.jpg"
+    },
+    {
+      "page_nr_hr" : "31",
+      "img_file" : "BOOK-antiquitiesofionia01-0001_196.jpg"
+    },
+    {
+      "page_nr_hr" : "32",
+      "img_file" : "BOOK-antiquitiesofionia01-0002_197.jpg"
+    },
+    {
+      "page_nr_hr" : "33",
+      "img_file" : "BOOK-antiquitiesofionia01-0001_196.jpg"
+    },
+    {
+      "page_nr_hr" : "34",
+      "img_file" : "BOOK-antiquitiesofionia01-0002_197.jpg"
+    },
+    {
+      "page_nr_hr" : "35",
+      "img_file" : "BOOK-antiquitiesofionia01-0001_196.jpg"
+    },
+    {
+      "page_nr_hr" : "36",
+      "img_file" : "BOOK-antiquitiesofionia01-0002_197.jpg"
+    },
+    {
+      "page_nr_hr" : "37",
+      "img_file" : "BOOK-antiquitiesofionia01-0001_196.jpg"
+    },
+    {
+      "page_nr_hr" : "38",
+      "img_file" : "BOOK-antiquitiesofionia01-0002_197.jpg"
+    },
+    {
+      "page_nr_hr" : "39",
+      "img_file" : "BOOK-antiquitiesofionia01-0001_196.jpg"
+    },
+    {
+      "page_nr_hr" : "40",
+      "img_file" : "BOOK-antiquitiesofionia01-0002_197.jpg"
+    },
+    {
+      "page_nr_hr" : "41",
+      "img_file" : "BOOK-antiquitiesofionia01-0001_196.jpg"
+    },
+    {
+      "page_nr_hr" : "42",
+      "img_file" : "BOOK-antiquitiesofionia01-0002_197.jpg"
+    },
+    {
+      "page_nr_hr" : "43",
+      "img_file" : "BOOK-antiquitiesofionia01-0001_196.jpg"
+    },
+    {
+      "page_nr_hr" : "44",
+      "img_file" : "BOOK-antiquitiesofionia01-0002_197.jpg"
+    },
+    {
+      "page_nr_hr" : "45",
+      "img_file" : "BOOK-antiquitiesofionia01-0001_196.jpg"
+    }
+  ]
+}

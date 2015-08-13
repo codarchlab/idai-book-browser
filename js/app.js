@@ -3,7 +3,8 @@ var routerApp = angular.module('idaiBookBrowser', [
 	'ui.router',
 	'idai.templates',
 	'idai.components',
-	'idaiBookBrowser.controllers'
+	'idaiBookBrowser.controllers',
+    'infinite-scroll'
 ]);
 
 routerApp.config(function($stateProvider, $urlRouterProvider) {
