@@ -10,7 +10,8 @@ angular.module('idaiBookBrowser.controllers',[])
  * api doc of main controller
  * $scope
  *   currentPageIndex - technical index of a book page which is focused (shown big). starts with 0.
- *   pageMinis - array of items of which each represents a minified book page
+ *   pageMinis - array of page objects. A subset of all page objects.
+ *     Contains page objects availabe for the page preview.
  */
 .controller('MainController',	[ '$scope', '$location', '$http',
 	function ($scope, $location, $http) {
@@ -22,6 +23,10 @@ angular.module('idaiBookBrowser.controllers',[])
 
 		var book = {}; // the json book data
 
+		/**
+		 * Each time a certain amount of page objects
+		 * from the book get added to the page preview.
+		 */
 		$scope.loadMore = function() {
 
 			var nrPagesNotLoaded = book.pages.length - $scope.pageMinis.length;
