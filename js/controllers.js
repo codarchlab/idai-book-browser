@@ -1,16 +1,26 @@
+/**
+ * Author: Daniel M. de Oliveira
+ */
+
 'use strict';
 
 /* Controllers */
 
 angular.module('idaiBookBrowser.controllers',[])
 
+/**
+ * api doc of main controller
+ */
 .controller('MainController',	[ '$scope', '$location', '$http',
 	function ($scope, $location, $http) {
+
+
 
 		$scope.currentPage = 0;
 		$scope.pageMinis = [];
 
 		$scope.loadMore = function() {
+
 
 			var newItemCountMax = 5;
 
@@ -29,11 +39,10 @@ angular.module('idaiBookBrowser.controllers',[])
 
 
 		$http.get('/sample_book.json').success(function(data){
-			console.log(data);
 
 			$scope.book=data;
 
-			$scope.loadMore()
+			$scope.loadMore();
 
 			$scope.leftHandSidePage=$scope.book.pages[$scope.currentPage];
 			$scope.rightHandSidePage=$scope.book.pages[$scope.currentPage+1];

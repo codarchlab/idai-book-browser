@@ -16,3 +16,9 @@ grunt server
 ```
 
 The application should now be up and running.
+
+Test the application via
+
+```bash
+karma start test/karma.conf.js
+```
