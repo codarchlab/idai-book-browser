@@ -9,13 +9,18 @@ var routerApp = angular.module('idaiBookBrowser', [
 
 routerApp.config(function($stateProvider, $urlRouterProvider) {
     
-    $urlRouterProvider.otherwise('/home');
+    $urlRouterProvider.otherwise('/book');
     
     $stateProvider
-        
+
         .state('home', {
             url: '/home',
             templateUrl: 'partials/home.html'
+        })
+
+        .state('book', {
+            url: '/book',
+            templateUrl: 'partials/book.html'
         })
         
         .state('about', {

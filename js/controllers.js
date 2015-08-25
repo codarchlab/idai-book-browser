@@ -12,42 +12,56 @@ angular.module('idaiBookBrowser.controllers',[])
  *   currentPageIndex - technical index of a book page which is focused (shown big). starts with 0.
  *   pageMinis - array of page objects. A subset of all page objects.
  *     Contains page objects availabe for the page preview.
+ *   book - book metadata
  */
-.controller('MainController',	[ '$scope', '$location', '$http',
-	function ($scope, $location, $http) {
+.controller('BookController',	[ '$scope', '$http',
+	function ($scope, $http) {
 
 		var defaultNrItems2Load = 5; // each time (for infinite scrolling)
 
-		$scope.currentPageIndex = 0;
-		$scope.pageMinis = [];
+        var bookJsonDataLoaded = false;
 
-		var book = {}; // the json book data
+		$scope.currentPageIndex = 0;
+
+		$scope.pageMinis = [];
+        $scope.book = {};
+        $scope.book.id = 515; // = arachne id of the book
+
+		var bookJsonData = {};
+
+        $scope.changeFocus = function(focusOn) {
+
+            console.log(focusOn)
+            $scope.currentPageIndex=focusOn;
+            $scope.leftHandSidePage = bookJsonData.pages[$scope.currentPageIndex];
+            $scope.rightHandSidePage = bookJsonData.pages[$scope.currentPageIndex + 1];
+        }
 
 		/**
 		 * Each time a certain amount of page objects
 		 * from the book get added to the page preview.
 		 */
 		$scope.loadMore = function() {
+            if (!bookJsonDataLoaded) return; // to prevent early access while rendering
 
-			var nrPagesNotLoaded = book.pages.length - $scope.pageMinis.length;
+			var nrPagesNotLoaded = bookJsonData.pages.length - $scope.pageMinis.length;
 
 			var nrPagesToLoad = defaultNrItems2Load;
 			if (nrPagesNotLoaded<defaultNrItems2Load) nrPagesToLoad=nrPagesNotLoaded;
 
-			for(var i = 0; i < nrPagesToLoad; i++) {
-				$scope.pageMinis.push(book.pages[$scope.pageMinis.length + i]);
-			}
+            var pageMinisIndex = $scope.pageMinis.length;
+			for ( var i = 0; i < nrPagesToLoad; i++ )
+                $scope.pageMinis.push(bookJsonData.pages[pageMinisIndex + i]);
 		};
 
+        if (!bookJsonDataLoaded)
+            $http.get('/sample_book.json').success(function(data){
 
-		$http.get('/sample_book.json').success(function(data){
+                bookJsonData=data;
+                bookJsonDataLoaded = true;
 
-			book=data;
-
-			$scope.loadMore();
-
-			$scope.leftHandSidePage=book.pages[$scope.currentPageIndex];
-			$scope.rightHandSidePage=book.pages[$scope.currentPageIndex+1];
-		});
+                $scope.loadMore();
+                $scope.changeFocus(0);
+            });
 	}
 ]);

@@ -1,0 +1,36 @@
+<h1>Book</h1>
+
+<div class="row" ng-controller="BookController">
+
+
+
+
+    <div class="col-md-2" style="height:550px; overflow-y:auto;">
+
+        <div infinite-scroll='loadMore()' infinite-scroll-distance='2'>
+            <div ng-repeat='pageMini in pageMinis track by $index'>
+                <a href="#" ng-click="changeFocus($index)">
+                    <img
+                            width="200px" height="200px" src="{{pageMini.img_file}}" alt="{{pageMini.page_nr_hr}}">
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="col-md-8" style="">
+
+        <div class="col-md-6" >
+            <img src="{{leftHandSidePage.img_file}}" width="410px" height="550px"></img>
+        </div>
+
+        <div class="col-md-6" >
+            <img src="{{rightHandSidePage.img_file}}" width="410px" height="550px"></img>
+        </div>
+
+
+    </div>
+
+</div>
