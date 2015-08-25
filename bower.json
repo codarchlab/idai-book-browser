@@ -15,6 +15,7 @@
     "angular-ui-router": "~0.2.15",
     "angular-bootstrap": "~0.13.0",
     "bootstrap-css-only": "~3.3.4",
-    "ngInfiniteScroll": "~1.2.1"
+    "ngInfiniteScroll": "~1.2.1",
+    "idai-components": "codarchlab/idai-components#~0.9.3"
   }
 }
