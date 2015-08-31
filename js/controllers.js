@@ -14,8 +14,8 @@ angular.module('idaiBookBrowser.controllers',[])
  *     Contains page objects availabe for the page preview.
  *   book - book metadata
  */
-.controller('BookController',	[ '$scope', '$http',
-	function ($scope, $http) {
+.controller('BookController',	[ '$scope', '$http', '$stateParams',
+	function ($scope, $http, $stateParams) {
 
 		var defaultNrItems2Load = 5; // each time (for infinite scrolling)
 
@@ -55,7 +55,9 @@ angular.module('idaiBookBrowser.controllers',[])
 		};
 
         if (!bookJsonDataLoaded)
-            $http.get('/sample_book.json').success(function(data){
+            $http.get('/data/book/'+$stateParams.arachneEntityId).success(function(data){
+
+                console.log(data)
 
                 bookJsonData=data;
                 bookJsonDataLoaded = true;

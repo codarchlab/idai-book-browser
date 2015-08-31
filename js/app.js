@@ -9,7 +9,7 @@ var routerApp = angular.module('idaiBookBrowser', [
 
 routerApp.config(function($stateProvider, $urlRouterProvider) {
     
-    $urlRouterProvider.otherwise('/book');
+    //$urlRouterProvider.otherwise('/book');
     
     $stateProvider
 
@@ -19,7 +19,7 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         })
 
         .state('book', {
-            url: '/book',
+            url: '/book/:arachneEntityId',
             templateUrl: 'partials/book.html'
         })
         

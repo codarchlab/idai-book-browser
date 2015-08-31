@@ -7,7 +7,7 @@ describe('MainController',function(){
     var scope = {};
 
     var mockBook = function() {
-        $httpBackend.expectGET('/sample_book.json').respond(200,'\
+        $httpBackend.expectGET('/data/book/arachneEntityId').respond(200,'\
         {\
         "pages" : [\
             {\
@@ -42,7 +42,8 @@ describe('MainController',function(){
         module('idaiBookBrowser.controllers');
         inject(function($controller,_$httpBackend_){
             $httpBackend=_$httpBackend_;
-            $controller('MainController',{'$scope':scope});
+            var stateParams = { arachneEntityId: 'arachneEntityId'};
+            $controller('BookController',{'$scope':scope, '$stateParams':stateParams});
         });
         mockBook();
     });
